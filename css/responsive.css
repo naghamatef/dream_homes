@@ -1,0 +1,104 @@
+@media only screen and (min-width: 1300px) {
+    .container {
+        max-width: 1260px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    .lg-center {
+        text-align: center
+    }
+
+
+}
+
+@media only screen and (max-width: 992px) {
+    .md-center {
+        text-align: center
+    }
+
+    nav>ul>li {
+        height: 100px;
+        line-height: 100px;
+        padding: 0 10px;
+    }
+    
+    header{
+        padding: 15px 0;
+    }
+  
+   
+}
+
+@media only screen and (max-width: 768px) {
+    .sm-center {
+        text-align: center
+    }
+
+    .nav-icon {
+        display: inline-block;
+    }
+
+   
+
+
+    nav {
+        position: fixed;
+        height: 100%;
+        width: 280px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        border-top: 5px solid #9fbdd5;
+        margin: auto;
+        z-index: 99;
+        top: 0;
+        background-color: #f9f9f9;
+        padding: 0;
+        width: 0;
+        opacity: 0;
+        box-shadow: 0 0 8px var(--maincolor);
+        background-image: url(../images/main/building.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: contain;
+        transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        -webkit-transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        -moz-transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        -ms-transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        -o-transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    nav.active {
+        animation: menu_effect 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -webkit-animation: menu_effect 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        opacity: 1;
+        width: 280px;
+        padding: 20px 40px 20px;
+    }
+
+   .main-search .custom-btn{
+       margin-top: 25px;
+   }
+}
+
+
+@media only screen and (max-width: 576px) {
+    .xs-center {
+        text-align: center
+    }
+    .inner-slider-caption h3 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+
+    .inner-slider-caption>div {
+        font-size: 18px;
+        margin-bottom: 30px;
+        line-height: 30px;
+    }
+  
+}

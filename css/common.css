@@ -1,0 +1,45 @@
+
+
+/*boostrap*/
+@import url("bootstrap.min.css");
+
+/*fontawesome*/
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+
+/*animate*/
+@import url("animate.min.css");
+
+
+/*aos*/
+@import url("aos.min.css");
+
+
+/*slick*/
+@import url("slick-theme.css");
+@import url("slick.css");
+
+
+/*select*/
+@import url("select2.min.css");
+@import url("select2-bootstrap4.min.css");
+
+
+/*sweetalert*/
+@import url("https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.css");
+
+
+/*lightgallery*/
+@import url("lightgallery.min.css");
+
+
+/*general*/
+@import url("general.css");
+
+/*header*/
+@import url("header.css");
+
+/*footer*/
+@import url("footer.css");
+
+/*keyframes*/
+@import url("keyframes.css");

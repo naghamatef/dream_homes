@@ -1,0 +1,86 @@
+/*start footer*/
+
+footer {
+    padding: 50px 0;
+    border-top: 1px solid #ebebeb
+}
+
+footer img {
+    max-height: 60px;
+    margin-bottom: 15px;
+}
+
+
+.social-icon {
+    height: 35px;
+    width: 35px;
+    background: #efefef;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: #000;
+    display: inline-block;
+    text-align: center;
+    line-height: 35px;
+    font-size: 15px;
+}
+
+.social-icon:hover {
+    background: var(--maincolor);
+    color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.footer-links a {
+    display: block;
+    margin-bottom: 15px;
+    color: #19191B;
+}
+
+.footer-links a:hover {
+    color: var(--maincolor);
+    text-shadow: 10px 0px 0 #eee;
+
+}
+
+.footer-contact a {
+    color: var(--maincolor);
+    direction: ltr;
+}
+
+.footer-contact a:hover {
+    color: #19191B;
+}
+
+footer p {
+    max-width: 215px;
+}
+
+.copyrights {
+    background: var(--maincolor);
+    padding: 15px 0;
+    font-size: 13px;
+}
+
+.copyrights ul a {
+    color: #fff;
+}
+
+.copyrights ul a:hover {
+    color: #F58320;
+}
+
+/*end footer*/

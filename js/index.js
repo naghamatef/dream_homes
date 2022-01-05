@@ -7,30 +7,28 @@
  });
 
  $('.select-input').select2({
-    theme: 'bootstrap4',
-    language: $('html').attr('dir') == 'rtl' ? 'ar' : 'en',
-    width:"100%"
-});
+     theme: 'bootstrap4',
+     language: $('html').attr('dir') == 'rtl' ? 'ar' : 'en',
+     width: "100%"
+ });
 
 
-//scroll link
-$(".scroll-link").click(function () {
-    $("html, body").animate({
-        scrollTop: $($(this).attr("href")).offset().top 
-    }, 1000);
-});
+ //scroll link
+ $(".scroll-link").click(function () {
+     $("html, body").animate({
+         scrollTop: $($(this).attr("href")).offset().top
+     }, 1000);
+ });
 
  $(document).ready(function () {
 
-     $('.services-slider').slick({
+     $('.product-carousel').slick({
          dots: true,
          arrows: false,
          autoplay: true,
          autoplayTimeout: 5000,
-         lazyLoad: 'progressive',
          rtl: ($("html").attr("dir")) == "rtl" ? true : false,
-         slidesToShow: 2,
-         slidesToScroll: 2,
+         slidesToShow: 4,
          responsive: [{
              breakpoint: 767,
              settings: {
@@ -41,33 +39,24 @@ $(".scroll-link").click(function () {
 
      });
 
-     $('.works-slider').slick({
+     $('.cities-slider').slick({
          dots: true,
-         lazyLoad: 'progressive',
          arrows: false,
          autoplay: true,
          autoplayTimeout: 5000,
-         infinite: false,
          rtl: ($("html").attr("dir")) == "rtl" ? true : false,
-
+         slidesToShow: 4,
+         responsive: [{
+             breakpoint: 767,
+             settings: {
+                 slidesToShow: 1,
+                 slidesToScroll: 1
+             }
+         }]
      });
 
-     $('.clients-slider').slick({
-         dots: true,
-         arrows: true,
-         autoplay: true,
-         autoplayTimeout: 5000,
-         infinite: false,
-         lazyLoad: 'progressive',
-         rtl: ($("html").attr("dir")) == "rtl" ? true : false,
-         prevArrow: '<span class="slick-prev"></span>',
-         nextArrow: '<span class="slick-next"></span>',
-         appendArrows: '.clients-sec .slider-nav',
-         appendDots: '.clients-sec .slider-nav'
 
-     });
      $('.parteners-slider').slick({
-         lazyLoad: 'progressive',
          dots: true,
          arrows: false,
          autoplay: true,

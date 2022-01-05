@@ -107,9 +107,9 @@ input:focus {
 }
 
 p {
-    color: #A49E9E;
-    font-size: 16px;
-    line-height: 28px;
+    color: #888;
+    font-size: 15px;
+    line-height: 32px;
 }
 
 h1 {
@@ -121,8 +121,8 @@ h2 {
 }
 
 h3 {
-    font-size: 17px;
-    line-height: 28px;
+    font-size: 20px;
+    line-height: 32px;
 }
 
 h4 {
@@ -382,8 +382,7 @@ h2,
 h3,
 h4,
 h5,
-p,
-.custom-btn::before {
+p,.product-img:before,.product-description,.product-img img {
     -webkit-transition: all 0.3s linear 0s;
     -moz-transition: all 0.3s linear 0s;
     -o-transition: all 0.3s linear 0s;
@@ -391,7 +390,7 @@ p,
     -ms-transition: all 0.3s linear 0s;
 }
 
-.footer-list li a::before {
+.footer-list li a::before ,.border-around,.border-around i,.custom-btn::before{
     transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
     -webkit-transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
     -moz-transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -532,7 +531,7 @@ i {
 }
 
 .gray-bg {
-    background-color: #F6F9FF
+    background-color: #F6F6f6
 }
 
 .white-bg {
@@ -733,16 +732,12 @@ b {
 
 .first_color,
 .first_color_hover:hover {
-    color: #000
-}
-
-.first_bg {
-    background-color: #000;
+    color: var(--maincolor)
 }
 
 .second_color,
 .second_color_hover:hover {
-    color: var(--maincolor)
+    color: var(--secondcolor)
 }
 
 .third_color,

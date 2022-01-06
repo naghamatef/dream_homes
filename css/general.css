@@ -36,7 +36,7 @@ body {
     padding: 0;
     font-family: "light";
     scrollbar-width: thin;
-    scrollbar-color: var(--maincolor) var(--scrollbarBG);
+    scrollbar-color: var(--darkcolor) var(--scrollbarBG);
     color: var(--darkcolor);
     direction: rtl;
     text-align: right;
@@ -57,7 +57,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: var(--maincolor);
+    background-color: var(--darkcolor);
     border-radius: 6px;
     border: 3px solid var(--scrollbarBG);
 }
@@ -382,7 +382,7 @@ h2,
 h3,
 h4,
 h5,
-p,.product-img:before,.product-description,.product-img img {
+p,.product-img:before,.product-description,.product-img img,.new {
     -webkit-transition: all 0.3s linear 0s;
     -moz-transition: all 0.3s linear 0s;
     -o-transition: all 0.3s linear 0s;
@@ -390,7 +390,7 @@ p,.product-img:before,.product-description,.product-img img {
     -ms-transition: all 0.3s linear 0s;
 }
 
-.footer-list li a::before ,.border-around,.border-around i,.custom-btn::before{
+.footer-list li a::before ,.border-around,.border-around i,.custom-btn::before,.project-logo,.project-div{
     transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
     -webkit-transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
     -moz-transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -648,6 +648,12 @@ b {
     color: #fff;
 }
 
+.reverse-btn{
+    background: var(--secondcolor);
+}
+.reverse-btn::before{
+    background: var(--maincolor);
+}
 .full-width-btn {
     min-width: inherit;
     display: block;
@@ -662,20 +668,12 @@ b {
     display: block;
 }
 
-.section-title h3 {
+.section-title h2 {
     font-size: 25px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
 }
 
-.section-title h4 {
-    color: #ffda8f;
-    font-size: 30px;
-    margin-bottom: 0;
-    margin-top: -10px;
-    opacity: .35;
-    animation: color_effect 4s ease-in infinite;
-    -webkit-animation: color_effect 4s ease-in infinite;
-}
+
 
 
 
@@ -730,8 +728,8 @@ b {
     font-family: "bold";
 }
 
-.first_color,
-.first_color_hover:hover {
+.main_color,
+.main_color_hover:hover {
     color: var(--maincolor)
 }
 

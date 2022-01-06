@@ -52,7 +52,7 @@ nav {
     margin-left: -20px;
 }
 
-nav>ul>li {
+.inner-nav>ul>li {
     position: relative;
     cursor: pointer;
     color: var(--darkcolor);
@@ -65,27 +65,7 @@ nav>ul>li {
 
 
 
-nav li:hover:before {
-    width: 100%;
-}
 
-nav>ul>li:before {
-    content: "";
-    z-index: -1;
-    background: var(--maincolor);
-    position: absolute;
-    height: 2px;
-    width: 0;
-    top: 0;
-    right: 0;
-    left: 0;
-    margin: auto;
-    transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
-    -webkit-transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
-    -moz-transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
-    -ms-transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
-    -o-transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
 
 
 .menu-item-has-child:after {
@@ -94,8 +74,9 @@ nav>ul>li:before {
     z-index: -1;
     font-weight: bold;
     font-size: 12px;
-    margin-right: 3px;
-    display: inline-block;
+    position: absolute;
+    left: 3px;
+    top: 3px;
     transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
     -webkit-transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
     -moz-transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -111,7 +92,7 @@ nav ul li:hover::after {
     -o-transform: rotate(180deg);
 }
 
-nav>ul>li>a {
+.inner-nav>ul>li>a {
     color: var(--darkcolor);
 
 }
@@ -121,8 +102,8 @@ nav ul li:hover .main-submenu {
     visibility: visible;
 }
 
-nav>ul>li:hover>a,
-nav>ul>li:hover {
+.inner-nav>ul>li:hover>a,
+.inner-nav>ul>li:hover {
     color: var(--maincolor);
 }
 
@@ -197,7 +178,7 @@ nav ul li:hover .main-submenu a {
     display: block;
     height: 3px;
     width: 100%;
-    background: var(--darkcolor);
+    background: var(--maincolor);
     -webkit-transition: .25s ease-in-out;
     -moz-transition: .25s ease-in-out;
     -o-transition: .25s ease-in-out;
@@ -208,4 +189,12 @@ nav ul li:hover .main-submenu a {
     margin-bottom: 8px;
 }
 
-
+.close-nav{
+    background: var(--maincolor);
+    border: none;
+    color: #fff;
+    width: 50px;
+    height: 40px;
+    font-size: 22px;
+    margin-bottom: 25px;
+}

@@ -20,11 +20,12 @@ footer img {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    color: #000;
+    color: var(--darkcolor);
     display: inline-block;
     text-align: center;
     line-height: 35px;
     font-size: 15px;
+    margin-left: 10px;
 }
 
 .social-icon:hover {
@@ -39,15 +40,15 @@ footer img {
 
 .footer-title {
     font-size: 18px;
-    font-weight: 700;
     margin-bottom: 40px;
     margin-top: 20px;
+    font-family: "bold";
 }
 
 .footer-links a {
     display: block;
     margin-bottom: 15px;
-    color: #19191B;
+    color: var(--darkcolor);
 }
 
 .footer-links a:hover {
@@ -62,25 +63,34 @@ footer img {
 }
 
 .footer-contact a:hover {
-    color: #19191B;
+    color: var(--darkcolor);
 }
 
 footer p {
-    max-width: 215px;
+    max-width: 250px;
+    font-size: 15px;
+    line-height: 30px;
 }
 
 .copyrights {
-    background: var(--maincolor);
     padding: 15px 0;
-    font-size: 13px;
+    font-size: 14px;
 }
 
-.copyrights ul a {
-    color: #fff;
+.copyrights  a,.copyrights {
+    color: var(--darkcolor);
 }
 
-.copyrights ul a:hover {
-    color: #F58320;
+
+
+.copyrights ul li:not(:last-of-type) a:after {
+    content: "|";
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 8px;
+}
+.copyrights  a:hover {
+    color: var(--maincolor);
 }
 
 /*end footer*/
